@@ -1,0 +1,6 @@
+{% for proxy, addrs in config|dictsort %}
+Acquire {
+ Retries "0";
+ HTTP { Proxy "http://{{ addrs.0 }}:8000"; };
+};
+{% endfor %}

@@ -1,0 +1,13 @@
+# This file is managed by Salt, do not edit
+#
+# allowed-networks-src.conf
+#
+# network sources that you want to allow access to the cache
+
+# private networks
+{%- for ip in config|sort %}
+{{ ip }}
+{%- endfor %}
+
+# additional non-private networks can be added to the directory:
+#  /etc/squid-deb-proxy/allowed-networks-src.acl.d
