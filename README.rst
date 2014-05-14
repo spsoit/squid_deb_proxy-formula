@@ -29,7 +29,7 @@ Installs an apt.conf.d configuration file pointing the client at the proxy serve
     squid_deb_proxy:
       client:
         proxy_server:
-          target: 
+          target: apt-get-proxy-server.mycloud.foo
           grain: 'network.ip_addrs'
           
 ``squid_deb_proxy.server``
