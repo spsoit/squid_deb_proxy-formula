@@ -10,7 +10,7 @@
 apt_conf_d:
   file.managed:
     - name: {{ squid_deb_proxy.lookup.apt_conf_d }}
-    - source: salt://squid_deb_proxy/files/apt_conf_d.jinja
+    - source: salt://squid-deb-proxy/files/apt_conf_d.jinja
     - user: root
     - group: root
     - mode: 644

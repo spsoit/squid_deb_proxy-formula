@@ -13,7 +13,8 @@
     'client': salt['pillar.get']('squid_deb_proxy:client', {
         'proxy_server': {
             'target': 'squid-deb-proxy-server.domain.foo',
-            'grain': 'network.ip_addrs'
+            'grain': 'network.ip_addrs',
+            'port': 8000
         }
     }, merge=True),
     'server': salt['pillar.get']('squid_deb_proxy:server', {
