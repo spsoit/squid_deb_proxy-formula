@@ -1,4 +1,4 @@
-{% from 'squid_deb_proxy/map.jinja' import squid_deb_proxy with context %}
+{% from 'squid-deb-proxy/map.jinja' import squid_deb_proxy with context %}
 
 {#
   Special sauce here! We are going to collect the proxy host from the salt
